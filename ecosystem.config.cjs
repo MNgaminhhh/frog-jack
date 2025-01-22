@@ -4,7 +4,6 @@ module.exports = {
       name: "Black Jack",
       script: "yarn",
       args: "preview --port 4970 --host",
-      cwd: "/var/www/frog-jack",
       env: {
         PM2_SERVE_PATH: "./dist",
         PM2_SERVE_PORT: 4970,
