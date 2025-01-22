@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@interlinklabs/mdk": "^1.2.0",
+    "@interlinklabs/mdk": "^1.3.6",
     "frogjack": "file:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

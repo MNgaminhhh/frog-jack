@@ -22,11 +22,11 @@ export function Home() {
           <img className="w-24" src={projectLogo} alt="Project Logo" />
           {!isLoggedIn ? (
             <Mdk
-              appid="id__hl0k5j8r1rp5mz35ggb0"
+              appid="id__8dllc9geszbw7dkt44ag"
               onSuccess={handleLoginSuccess}
               onFailure={handleLoginFailure}
             >
-              {({ open }) => (
+              {({ open }: any) => (
                 <button
                   onClick={open}
                   className="ml-8 w-auto flex items-center animate-bounce text-2xl"
