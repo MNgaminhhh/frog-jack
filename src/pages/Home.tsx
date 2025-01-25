@@ -3,6 +3,7 @@ import projectLogo from "../assets/projectLogo.png";
 import playIcon from "../assets/playIcon.png";
 import { Link } from "react-router-dom";
 import Mdk from "@interlinklabs/mdk";
+import Login from "./Login";
 
 export function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -17,30 +18,15 @@ export function Home() {
 
   return (
     <div className="w-screen h-screen flex items-center justify-center flex-col">
-      <div className="w-auto">
+      <div className="w-full">
         <div className="flex items-center">
-          <img className="w-24" src={projectLogo} alt="Project Logo" />
           {!isLoggedIn ? (
             <Mdk
               appid="id__8dllc9geszbw7dkt44ag"
               onSuccess={handleLoginSuccess}
               onFailure={handleLoginFailure}
             >
-              {({ open }: any) => (
-                <button
-                  onClick={open}
-                  className="ml-8 w-auto flex items-center animate-bounce text-2xl"
-                  style={{
-                    backgroundColor: "#ff4b5c",
-                    color: "white",
-                    padding: "10px 20px",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                  }}
-                >
-                  Sign In to Play
-                </button>
-              )}
+              {({ open }: any) => <Login openMdk={open} />}
             </Mdk>
           ) : (
             // Sau khi đăng nhập thành công, hiển thị liên kết để chuyển đến trang game
