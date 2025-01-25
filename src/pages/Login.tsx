@@ -53,10 +53,8 @@ export default function Login({ openMdk }: { openMdk: () => void }) {
             width: "214px",
             position: "absolute",
             top: "64%",
-            // center the image
             left: "50%",
             transform: "translate(-50%, -50%)",
-
             zIndex: 10,
             margin: "0 auto",
           }}
@@ -81,7 +79,13 @@ export default function Login({ openMdk }: { openMdk: () => void }) {
             fontSize: "32px",
             lineHeight: "44px",
             padding: "24px 44px",
+            transition: "transform 0.3s ease",
           }}
+          onClick={openMdk}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.transform = "scale(1.05)")
+          }
+          onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
         >
           Sign in
         </button>
