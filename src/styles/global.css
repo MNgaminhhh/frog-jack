@@ -6,37 +6,41 @@
   font-family: "monogram";
   src: url("../assets/fonts/monogram.ttf");
 }
+@font-face {
+  font-family: "pixelmix";
+  src: url("../assets/fonts/pixelmix.ttf");
+}
 
 body {
-  @apply bg-bg font-monogram  flex justify-center m-0 p-0
+  @apply bg-bg font-monogram  flex justify-center m-0 p-0;
 }
 
 #dealerHand div:nth-child(5) {
-  @apply left-10
+  @apply left-10;
 }
 
 #dealerHand div:nth-child(6) {
-  @apply left-28
+  @apply left-28;
 }
 
 #dealerHand div:nth-child(7) {
-  @apply left-44
+  @apply left-44;
 }
 
 #dealerHand div:nth-child(8) {
-  @apply left-60
+  @apply left-60;
 }
 
-#playerHand div:nth-child(5), {
-  @apply left-10
+#playerHand div:nth-child(5) {
+  @apply left-10;
 }
 
 #playerHand div:nth-child(6) {
-  @apply left-36
+  @apply left-36;
 }
 
 #playerHand div:nth-child(7) {
-  @apply left-64
+  @apply left-64;
 }
 
 /* 
